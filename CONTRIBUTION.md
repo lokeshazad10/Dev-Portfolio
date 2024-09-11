@@ -1,1 +1,0 @@
-<h1>Way to contribution</h1>

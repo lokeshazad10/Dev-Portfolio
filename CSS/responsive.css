@@ -1,0 +1,14 @@
+@media screen and (max-width: 1080px){
+    .message-box-image{
+        display: none;
+    }
+    .message-header h1{
+        margin-left: 0;
+    }
+    .message-form{
+        width: 100%;
+    }
+    .contact-content{
+        grid-template-columns: repeat(1 1fr);
+    }
+}

@@ -1,14 +1,26 @@
-@media screen and (max-width: 1080px){
-    .message-box-image{
-        display: none;
+/* @media only screen and (max-width: 1080px){
+    header{
+        height: 300px;
+        background-color: #1d1d1d;
+        flex-direction: column;
     }
-    .message-header h1{
-        margin-left: 0;
+    .burger-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .message-form{
-        width: 100%;
+    .navbar-right, .navbar-right ul{
+        flex-direction: column;
     }
-    .contact-content{
-        grid-template-columns: repeat(1 1fr);
+    .navbar-right ul li{
+        margin: 10px;
     }
-}
+    .connect-links{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .social-links ul{
+        flex-direction: row;
+    }
+} */

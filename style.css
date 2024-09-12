@@ -21,6 +21,9 @@ li{
 body::-webkit-scrollbar{
     display: none;
 }
+body::-webkit-scrollbar{
+    behavior: smooth;
+}
 body{
     width: 100vw;
     background-image: url('/Dev-Portfolio/Images/body-bg.jpg');
@@ -52,19 +55,13 @@ a{
 /* all elements styling start */
 
 /* navbar styling start*/
-header{
-    display: block;
-    top: 0;
-    z-index: 10;
-}
-nav{
-    transition: 1s ease-in;
-    height: 75px;
-    /* background-color: #1d1d1d; */
-}
 
 /* for navbar drop when scroll */
 .fixed{
+    display: block;
+    z-index: 10;
+    height: 75px;
+    transition: 1s ease-in;
     position: sticky;
     top: 0;
     background-color: var(--dark-gray);
@@ -148,6 +145,26 @@ nav{
 .social-links ul li:hover{
     transform: scale(1.3);
     z-index: 2;
+}
+.burger-menu{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+.burger-menu span{
+    height: 5px;
+    width: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 2px 20px;
 }
 /* navbar styling end*/
 
@@ -243,6 +260,59 @@ main{
 .about-container{
     height: 90%;
     width: 90%;
+}
+.about-heading h1{
+    font-size: 40px;
+}
+.about-content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-left{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-left .about-profile-pic{
+    height: 98%;
+    width: 60%;
+    border: 3px solid #fff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.about-profile-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about-right{
+    width: 60%;
+    height: 100%;
+}
+.about-right{
+    display: flex;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.details li{
+    margin: 30px 20px;
+    font-size: 20px;
+}
+.details li span{
+    color: var(--light-gray);
+}
+.details .detail-title{
+    padding-right: 40px;
+}
+.details .detail-info{
+    padding-left: 40px;
 }
 /* about section styling end */
 
@@ -579,6 +649,7 @@ footer .footer-box{
     opacity: 50%;
     color: var(--light-gray);
     font-size: 16px; 
+    cursor: pointer;
 }
 .footer-box div ul{
     margin: 10px;

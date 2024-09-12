@@ -9,32 +9,15 @@ document.getElementById('contact-nav').addEventListener("click", ()=>{
 })
 
 //making navbar fixed when scroll down
-window.addEventListener('scroll', function(){
-    var navbar = document.querySelector('header');
+// window.addEventListener('scroll', function(){
+//     var navbar = document.getElementById("header");
 
-    var scrollPostion = window.scrollY || document.documentElement.scrollTop;
+//     var scrollPostion = window.scrollY || document.documentElement.scrollTop;
 
-    if(scrollPostion>200){
-        navbar.classList.add('fixed');
-    }else{
-        navbar.classList.remove('fixed');
-    }
-});
+//     if(scrollPostion>200){
+//         navbar.classList.add('fixed');
+//     }else{
+//         navbar.classList.remove('fixed');
+//     }
+// });
 
-let pre = '50%'
-const slide = document.querySelectorAll('.project-card');
-const nextBtn = document.getElementById('next-btn');
-const prevBtn = document.getElementById('pre-btn');
-
-nextBtn.addEventListener('click', function(){
-    slide.forEach(function(item){
-        item.style.transform = 'translateX(50%)';
-    });
-});
-
-prevBtn.addEventListener('click', function(){
-    slide.forEach(function(item){
-        item.style.transform = 'translateX(-50)';
-
-    });
-});

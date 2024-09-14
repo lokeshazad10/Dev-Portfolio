@@ -57,20 +57,21 @@ a{
 /* navbar styling start*/
 
 /* for navbar drop when scroll */
-.fixed{
+.header{
     display: block;
+}
+.fixed{
     z-index: 10;
     height: 75px;
-    transition: 1s ease-in;
     position: sticky;
     top: 0;
     background-color: var(--dark-gray);
-    box-shadow: 5px 5px 10px rgb(99, 99, 99);
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .navbar-left{
     width: 30%;
@@ -302,14 +303,17 @@ main{
     flex-direction: column;
 }
 .details li{
-    margin: 30px 20px;
+    margin: 10px 20px;
     font-size: 20px;
 }
 .details li span{
     color: var(--light-gray);
 }
 .details .detail-title{
+    display: inline-block;
     padding-right: 40px;
+    width: 170px;
+    color: #eee;
 }
 .details .detail-info{
     padding-left: 40px;
@@ -372,27 +376,8 @@ main{
         z-index: 5;
     }
 }
-.project-content button{
-    font-size: 1.5rem;
-    color: var(--dark-gray);
-    padding: 20px 25px;
-    margin: 0 -10px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #f8f9fa;
-    &:hover{
-        background-color: #1d1d1d;
-        color: #fff;
-    }
-}
-.project-content #pre-btn{
-    left: 50px;
-}
-.project-content #next-btn{
-    right: 50px;
-}
+
+
 .project-topic{
     height: 20%;
     max-height: 40%;
@@ -425,7 +410,10 @@ main{
 .project-repo p{
     font-size: 16px;
 }
-
+.project-repo i{
+    color: #ff4000;
+    font-size: 24px;
+}
 /* projects section styling end */
 
 
@@ -605,13 +593,16 @@ main{
 .message-form button{
     border-radius: 10px;
     border: none;
-    background-color: royalblue;
+    background-color: rgb(46, 82, 192);
     position: absolute;
     color: #ffffff;
     padding: 10px;
     cursor: pointer;
     right: 75px;
     bottom: -10px;
+    &:hover{
+        background-color: rgb(8, 8, 206);
+    }
 }
 
 

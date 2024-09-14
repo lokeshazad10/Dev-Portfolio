@@ -9,15 +9,15 @@ document.getElementById('contact-nav').addEventListener("click", ()=>{
 })
 
 //making navbar fixed when scroll down
-// window.addEventListener('scroll', function(){
-//     var navbar = document.getElementById("header");
+window.addEventListener('scroll', function(){
+    var navbar = document.getElementById("header");
 
-//     var scrollPostion = window.scrollY || document.documentElement.scrollTop;
+    var scrollPostion = window.scrollY || document.documentElement.scrollTop;
 
-//     if(scrollPostion>200){
-//         navbar.classList.add('fixed');
-//     }else{
-//         navbar.classList.remove('fixed');
-//     }
-// });
+    if(scrollPostion>200){
+        navbar.classList.add('fixed');
+    }else{
+        navbar.classList.remove('fixed');
+    }
+});
 

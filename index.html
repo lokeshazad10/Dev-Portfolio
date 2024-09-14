@@ -8,6 +8,7 @@
     <!-- local css files -->
     <link rel="stylesheet" href="/Dev-Portfolio/style.css">
     <link rel="stylesheet" href="/Dev-Portfolio/CSS/responsive.css">
+    <link rel="stylesheet" href="/Dev-Portfolio/CSS/animate.css">
 
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,7 +16,7 @@
 </head>
 <body><span id="home-top"></span>
         <nav id="header" class="fixed">
-            <div class="navbar">
+            <div class="navbar flex-dir-col">
                 <section class="navbar-left">
                     <a href="index.html"><h1 class="logo"><span>Lokesh</span> Azad</h1></a>
                 </section>
@@ -65,52 +66,56 @@
             </aside>
         </section>
         <section class="about">
-            <div class="about-container glass-morphism-effect">
+            <div class="about-container glass-morphism-effect animate">
                 <div class="about-heading heading"><h1>About</h1></div>
                 <div class="about-content">
                     <div class="about-left">
-                        <div class="about-profile-pic"><img src="/Dev-Portfolio/Images/profile-pic.jpg" alt="Profile Pic"></div>
+                        <div class="about-profile-pic animate"><img src="/Dev-Portfolio/Images/profile-pic.jpg" alt="Profile Pic"></div>
                     </div>
                     <div class="about-right">
                         <ul class="details">
-                            <li><pre><span class="detail-title">Name</span><span>            :</span><span class="detail-info">Lokesh Azad</span></pre></li>
-                            <li><pre><span class="detail-title">Date of Birth</span><span>:</span><span class="detail-info">10/10/2005</span></pre></li>
-                            <li><pre><span class="detail-title">Accupation</span><span>  :</span><span class="detail-info">Student</span></pre></li>
-                            <li><pre><span class="detail-title">Contact</span><span>        :</span><span class="detail-info">+91-9343792826</span></pre></li>
-                            <li><pre><span class="detail-title">Email</span><span>            :</span><span class="detail-info">lokeshazad10@gmail.com</span></pre></li>
+                            <li><span class="detail-title">Name:</span><span class="detail-info">Lokesh Azad</span></li>
+                            <li><span class="detail-title">Date of Birth:</span><span class="detail-info">10 October 2005</span></li>
+                            <li><span class="detail-title">Accupation:</span><span class="detail-info">Student</span></li>
+                            <li><span class="detail-title">Contact:</span><a href="tel://9343792826"><span class="detail-info">+91-9343792826</span></a></li>
+                            <li><span class="detail-title">Email:</span><a href="mailto:lokeshazad10@gmail.com"><span class="detail-info">lokeshazad10@gmail.com</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section class="projects" id="projects">
-            <div class="project-container glass-morphism-effect">
+            <div class="project-container glass-morphism-effect animate">
                 <div class="project-heading heading"><h1>Projects</h1></div>
                 <div class="project-content">
-                    <button id="pre-btn">&#10094</button>
                         <div class="slider">
                             <div class="project-card">
                                 <div class="project-topic"><p>Rock Paper Scissor</p></div>
                                 <div class="project-des"><p>This is a normal game you can play with computer.</p></div>
-                                <div class="project-repo"><p><a href="">Visit repository</a></p></div>
+                                <div class="project-repo"><p><a href="https://github.com/lokeshazad10/Rock-Paper-Scissors-Game.git" target="_blank"><i class="fa-brands fa-git-alt"></i> Visit repository</a></p></div>
                             </div>
                             <div class="project-card">
-                                <div class="project-topic"><p>To-Do List</p></div>
-                                <div class="project-des"><p>this is a normal to-do list where you can save your work.</p></div>
-                                <div class="project-repo"><p><a href="">Visit repository</a></p></div>
+                                <div class="project-topic"><p>Quiz App</p></div>
+                                <div class="project-des"><p>this is a normal Quiz game.</p></div>
+                                <div class="project-repo"><p><a href="https://github.com/lokeshazad10/Quiz-App-Game.git" target="_blank"><i class="fa-brands fa-git-alt"></i> Visit repository</a></p></div>
                             </div>
                             <div class="project-card">
                                 <div class="project-topic"><p>Tic Tac Toe</p></div>
                                 <div class="project-des"><p>this is a normal game and this is a two player game (not computer).</p></div>
-                                <div class="project-repo"><p><a href="">Visit repository</a></p></div>
+                                <div class="project-repo"><p><a href="https://github.com/lokeshazad10/Tic-Tac-Toe-game.git" target="_blank"><i class="fa-brands fa-git-alt"></i> Visit repository</a></p></div>
                             </div>
                         </div>
-                    <button id="next-btn">&#10095</button>
                 </div>
             </div>
         </section>
+        <section class="skills">
+            <div class="skills-container glass-morphism-effect">
+                <div class="heading"><h1>Skills and Tools</h1></div>
+                <div class="skill-content"></div>
+            </div>
+        </section>
         <section class="contact">
-            <div class="contact-container glass-morphism-effect">
+            <div class="contact-container glass-morphism-effect animate">
                 <div class="contact-heading heading"><h1>Contact Me</h1></div>
                 <div class="contact-content">
                     <div class="contact-details">
@@ -150,7 +155,7 @@
             </div>
         </section>
         <section class="message-section">
-            <div class="message-container">
+            <div class="message-container animate">
                 <div class="message-header"><h1>Message for me</h1></div>
                 <div class="message-box">
                     <div class="message-box-image"></div>
@@ -158,7 +163,7 @@
                         <form class="message-form">
                             <input type="text" name="name" placeholder="Enter your name" required>
                             <input type="email" name="email" placeholder="Enter your email" required>
-                            <textarea name="" name="message" id="" maxlength="500" spellcheck="true" aria-expanded="false" placeholder="Enter your message here !"></textarea>
+                            <textarea name="" name="message" id="" maxlength="1000" spellcheck="true" aria-expanded="false" placeholder="Enter your message here !"></textarea>
                             <button type="submit">Send Message</button>
                         </form>
                     </div>

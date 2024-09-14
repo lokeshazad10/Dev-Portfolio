@@ -2,6 +2,14 @@
     .flex-dir-col{
         flex-direction: column;
     }
+    .pos-abs{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-height{
+        height: 500px;
+    }
     .vis-hidden{
         visibility: hidden;
     }

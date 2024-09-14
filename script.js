@@ -16,8 +16,10 @@ window.addEventListener('scroll', function(){
 
     if(scrollPostion>200){
         navbar.classList.add('fixed');
+        navbar.style.backgroundColor = "#1d1d1d";
     }else{
         navbar.classList.remove('fixed');
+        navbar.style.backgroundColor = "";
     }
 });
 

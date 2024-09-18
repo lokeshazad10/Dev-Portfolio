@@ -4,8 +4,8 @@ document.querySelectorAll('.card').forEach(card=>{
         opacity: 0,
         scrollTrigger: {
             trigger: card,
-            start: "top 5%",
-            end: "bottom 5%",
+            start: "top 0",
+            end: "bottom 0",
             scrub: true,
         }
     });

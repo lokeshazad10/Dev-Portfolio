@@ -8,7 +8,8 @@
     <!-- local css files -->
     <link rel="stylesheet" href="/Dev-Portfolio/style.css">
     <link rel="stylesheet" href="/Dev-Portfolio/CSS/responsive.css">
-    <link rel="stylesheet" href="/Dev-Portfolio/CSS/animate.css">
+    <link rel="stylesheet" href="/Dev-Portfolio/scroll-animation/animate.css">
+    <link rel="stylesheet" href="/Dev-Portfolio/Loader/loader.css">
 
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -66,7 +67,7 @@
             </aside>
         </section>
         <section class="about">
-            <div class="about-container glass-morphism-effect animate">
+            <div class="about-container glass-morphism-effect animate card">
                 <div class="about-heading heading"><h1>About</h1></div>
                 <div class="about-content">
                     <div class="about-left">
@@ -85,7 +86,7 @@
             </div>
         </section>
         <section class="projects" id="projects">
-            <div class="project-container glass-morphism-effect animate">
+            <div class="project-container glass-morphism-effect animate card">
                 <div class="project-heading heading"><h1>Projects</h1></div>
                 <div class="project-content">
                         <div class="slider">
@@ -109,13 +110,13 @@
             </div>
         </section>
         <section class="skills">
-            <div class="skills-container glass-morphism-effect">
+            <div class="skills-container glass-morphism-effect card">
                 <div class="heading"><h1>Skills and Tools</h1></div>
                 <div class="skill-content"></div>
             </div>
         </section>
         <section class="contact">
-            <div class="contact-container glass-morphism-effect animate">
+            <div class="contact-container glass-morphism-effect animate card">
                 <div class="contact-heading heading"><h1>Contact Me</h1></div>
                 <div class="contact-content">
                     <div class="contact-details">
@@ -213,6 +214,8 @@
     <!-- script files -->
 
     <script src="/Dev-Portfolio/script.js"></script>
+    <script src="/Dev-Portfolio/Loader/loader.js"></script>
+    <script src="/Dev-Portfolio/scroll-animation/animate.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -221,5 +224,16 @@
           loop: true,
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" 
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+    </script>
+    <script src="/Dev-Portfolio/scroll-animation/scroll.js"></script>
 </body>
 </html>

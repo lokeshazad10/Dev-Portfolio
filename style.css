@@ -362,13 +362,15 @@ main{
     margin: 0 20px;
     padding: 10px;
     text-align: center;
-    border-radius: 1.5rem;
-    box-shadow: 1px 1px 10px #ffffff ,inset 1px 1px 5px #ffffff;
+    border-radius: 10px;
     overflow: hidden;
     transition: 0.2s ease-in-out;
+    border: 1px solid var(--light-gray);
     &:hover{
         transform: translateY(-20px);
         z-index: 5;
+        box-shadow: 1px 5px 10px #000 ,inset -1px -5px 10px #000;
+        border: none;
     }
 }
 
@@ -409,6 +411,8 @@ main{
     color: #ff4000;
     font-size: 24px;
 }
+
+
 /* projects section styling end */
 
 

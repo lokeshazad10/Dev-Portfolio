@@ -197,9 +197,9 @@ main{
 .main-left .info-box h3{
     font-size: 15px;
     line-height: 20px;
-    padding-top: 15px;
     opacity: 70%;
     color: #fff;
+    padding-top: 15px;
 }
 .mid-box .main-left .info-box h1 span,#element{
     color: rgb(0, 255, 255);

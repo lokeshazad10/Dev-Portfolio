@@ -6,8 +6,9 @@
     <title>Portfolio - Lokesh Azad</title>
     
     <!-- local css files -->
-    <link rel="stylesheet" href="/Dev-Portfolio/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="/Dev-Portfolio/CSS/responsive.css">
+    <link rel="stylesheet" href="/Dev-Portfolio/CSS/mediaQueries.css">
     <link rel="stylesheet" href="/Dev-Portfolio/Loader/loader.css">
 
     <!-- font-awesome cdn -->
@@ -15,18 +16,18 @@
 
 </head>
 <body><span id="home-top"></span>
-        <nav id="header" class="fixed">
-            <div class="navbar">
+        <nav class="header fixed w100">
+            <div class="navbar w100">
                 <section class="navbar-left">
                     <a href="index.html"><h1 class="logo"><span>Lokesh</span> Azad</h1></a>
                 </section>
-                <section class="navbar-right">
+                <section class="navbar-right d-none">
                     <div class="connect-links">
                         <ul>
-                            <li id="home">Home</li>
-                            <li id="project-nav">Projects</li>
-                            <li id="">Resume</li>
-                            <li id="contact-nav">Contact</li>
+                            <li class="home">Home</li>
+                            <li class="project-nav">Projects</li>
+                            <li class="about-link">About</li>
+                            <li class="contact-nav">Contact</li>
                         </ul>
                     </div>
                     <div class="social-links">
@@ -36,43 +37,53 @@
                             <li><a href="https://www.instagram.com/lokeshazad10/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <div class="burger-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </section>
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars menu-icon" onclick="showSidebar()"></i>
+                </div>
+                <!-- making sidebar -->
+                <div class="sidebar">
+                    <ul class="sidebar-connect-links">
+                        <li id="hide-menu"><i class="fa-solid fa-xmark" onclick="hideSidebar()"></i></li>
+                        <li class="home"><i class="fa-solid fa-house"></i>Home</li>
+                        <li class="project-nav"><i class="fa-solid fa-folder-closed"></i>Projects</li>
+                        <li class="about-link"><i class="fa-solid fa-download"></i>About</li>
+                        <li class="contact-nav"><i class="fa-solid fa-address-card"></i>Contact</li>
+                    </ul>
+                    <ul class="sidebar-social-links">
+                        <li><a href="https://github.com/lokeshazad10" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/lokesh-azad-7338ab2a5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/lokeshazad10/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </nav><!--header end-->
     <main id="content">
-        <section class="mid-box">
-            <aside class="main-left">
-                <div class="info-box">
-                    <h1>Hi, I'm <span>Lokesh Azad</span></h1>
-                    <div>I am a passionate</div>
-                    <span id="element"></span>
-                    <h3>My expertise lies in crafting clean, responsive designs and writing efficient, scalable code. Whether it's developing front-end interfaces with HTML, CSS and JavaScript.
+        <section class="mid-box flex-dir-colR">
+            <div class="main-left w100">
+                <div class="info-box flex flex-dir-col">
+                    <h1 class="f20 fw8">Hi, I'm <span class="f20 fw8">Lokesh Azad</span></h1>
+                    <div class="f20 fw8">I am a passionate</div>
+                    <h1 class="f20 fw8"><span id="element" class="f16 fw8"></span></h1>
+                    <h3 class="f16 t-center fw8">My expertise lies in crafting clean, responsive designs and writing efficient, scalable code. Whether it's developing front-end interfaces with HTML, CSS and JavaScript.
                     I believe that a well-designed website can make a significant impact and I'm dedicated to delivering high-quality work that exceeds expectations. 
                     Explore my projects, learn more about my skills and feel free to get in touch if you're interested in collaborating.
                     </h3>
                 </div>
-            </aside>
-            <aside class="main-right">
-                <div class="photo-box">
-                    <div class="image-frame">
-                        <img src="/Dev-Portfolio/Images/profile-pic.jpg" >
-                    </div>
+            </div>
+            <div class="main-right w100">
+                <div class="image-frame">
                 </div>
-            </aside>
-        </section>
+            </div>
+        </section><!--mid-box section end-->
         <section class="about">
             <div class="about-container glass-morphism-effect animate card">
-                <div class="about-heading heading"><h1>About</h1></div>
+                <div class="about-heading heading fw8"><h1>About</h1></div>
                 <div class="about-content">
-                    <div class="about-left">
+                    <div class="about-left d-none">
                         <div class="about-profile-pic animate"><img src="/Dev-Portfolio/Images/profile-pic.jpg" alt="Profile Pic"></div>
                     </div>
-                    <div class="about-right">
+                    <div class="about-right flex w100 flex-dir-col">
                         <ul class="details">
                             <li><span class="detail-title">Name:</span><span class="detail-info">Lokesh Azad</span></li>
                             <li><span class="detail-title">Date of Birth:</span><span class="detail-info">10 October 2005</span></li>
@@ -80,10 +91,14 @@
                             <li><span class="detail-title">Contact:</span><a href="tel://9343792826"><span class="detail-info">+91-9343792826</span></a></li>
                             <li><span class="detail-title">Email:</span><a href="mailto:lokeshazad10@gmail.com"><span class="detail-info">lokeshazad10@gmail.com</span></a></li>
                         </ul>
+                        <p class="f16">Lorem ipsum dolor sit aet quaerat ab minus saepe, qu
+                            ibusdam aperiam distinctio labore animi libero enim ea
+                            rum minima asperiores sint voluptatum laboriosam conse
+                            quatur laudantium explicabo quae cum itaque!</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> <!--about section end-->
         <section class="projects" id="projects">
             <div class="project-container glass-morphism-effect animate card">
                 <div class="project-heading heading"><h1>Projects</h1></div>
@@ -107,7 +122,7 @@
                         </div>
                 </div>
             </div>
-        </section>
+        </section><!--project section end-->
         <section class="skills">
             <div class="skills-container glass-morphism-effect card">
                 <div class="heading"><h1>Skills and Tools</h1></div>
@@ -127,7 +142,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!--skills and tools section end-->
         <section class="contact">
             <div class="contact-container glass-morphism-effect animate card">
                 <div class="contact-heading heading"><h1>Contact Me</h1></div>
@@ -167,13 +182,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!--contact section end-->
         <section class="message-section">
             <div class="message-container animate">
-                <div class="message-header"><h1>Message for me</h1></div>
+                <div class="message-header t-center"><h1 class="margin0 fw8">Message for me</h1></div>
                 <div class="message-box">
-                    <div class="message-box-image"></div>
-                    <div class="message-box-form">
+                    <div class="message-box-image d-none"></div>
+                    <div class="message-box-form w100">
                         <form class="message-form">
                             <input type="text" name="name" placeholder="Enter your name" required>
                             <input type="email" name="email" placeholder="Enter your email" required>
@@ -195,13 +210,13 @@
             <div class="footer-link-box">
                 <ul><p><i class="fa-solid fa-arrow-up-right-from-square"></i> Quick Links</p>
                     <li class="home">Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li class="about-link">About</li>
+                    <li class="project-nav">Projects</li>
+                    <li class="contact-nav">Contact</li>
                 </ul>
             </div>
             <div class="footer-link-box">
-                <ul><p>Social Connect</p>
+                <ul><p>Support me</p>
                     <li>Instagram</li>
                     <li>GitHub</li>
                     <li>LinkedIn</li>

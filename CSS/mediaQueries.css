@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px){
+    .w100{
+        width: 100%;
+    }
+    .flex-dir-col{
+        flex-direction: column;
+    }
+    .pos-abs{
+        position: absolute;
+    }
+    .vis-hidden{
+        visibility: hidden;
+    }
+    .d-none{
+        display: none;
+    }
+    .navbar-left h1{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .navbar-left span{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .navbar{
+        background-color: #1d1d1d;
+    }
+    /* .sidebar{
+        display: initial;
+    } */
+    .burger-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .burger-menu i{
+        padding: 0 20px;
+    }
+ }
+
+ 
+ /* X-icon -> <i class="fa-solid fa-xmark"></i>
+ Home->icon <i class="fa-solid fa-house"></i>
+ Contact-icon -> <i class="fa-solid fa-address-card"></i>
+ projects-icon -> <i class="fa-solid fa-folder-closed"></i> */
+ 

@@ -46,6 +46,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .display-none{
     display: none;
@@ -58,15 +59,16 @@ a{
 /* navbar styling start*/
 
 /* for navbar drop when scroll */
-#header{
+.header{
     display: block;
     backdrop-filter: blur(3px);
+    position: relative;
+    z-index: 999;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 .navbar-left{
     width: 30%;
@@ -109,19 +111,18 @@ a{
     text-decoration: none;
 }
 .connect-links ul li{
-    font-size: 10px;
-    width: 75px;
+    font-size: 16px;
+    width: 100px;
     margin: 0 10px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
-    border: 1px solid #fff;
-    border-radius: 20px;
+    border: 2px solid aqua;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.5s;
 }
 .connect-links ul li:hover{
-    transform: scale(1.3);
-    z-index: 2;
+    background-color: aqua;
+    color: #000;
 }
 .social-links ul li{
     margin: 0 10px;
@@ -134,7 +135,7 @@ a{
     justify-content: center;
 }
 .social-links ul li{
-    font-size: 25px;
+    font-size: 36px;
     cursor: pointer;
     transition: 0.1s;
 }
@@ -143,25 +144,12 @@ a{
     z-index: 2;
 }
 .burger-menu{
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    height: 50px;
-    width: 50px;
     display: none;
-    cursor: pointer;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
+    width: 70%;
+    height: 75px;
 }
-.burger-menu span{
-    height: 5px;
-    width: 30px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    margin: 2px 20px;
-}
+
+
 /* navbar styling end*/
 
 
@@ -175,7 +163,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-.mid-box aside{
+.main-left, .main-right{
     width: 50%;
     height: inherit;
 }
@@ -211,7 +199,7 @@ main{
     align-items: center;
     
 }
-.main-right .photo-box{
+/* .main-right .photo-box{
     position: relative;
     width: 400px;
     height: 400px;
@@ -219,25 +207,23 @@ main{
     justify-content: center;
     align-items: center;
     
-}
-.main-right .photo-box img{
+} */
+/* .main-right .photo-box img{
     padding-top: 20px;
     object-fit: contain;
     max-width: 100%;
     max-height: 550px;
     
-}
-.main-right .photo-box .image-frame{
+} */
+.main-right .image-frame{
     height: 400px;
     width: 400px;
     border: 5px solid rgb(0, 255, 255);
     border-radius: 50%;
     box-shadow: 1px 1px 20px rgb(0, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    
+    background: url('/Dev-Portfolio/Images/profile-pic.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -259,6 +245,7 @@ main{
 }
 .about-heading h1{
     font-size: 40px;
+    font-weight: 800;
 }
 .about-content{
     width: 100%;
